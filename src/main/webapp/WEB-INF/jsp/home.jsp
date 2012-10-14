@@ -10,7 +10,7 @@
 
 <html>
 <head>
-    <title>Ingenuity Heroku Skeleton App</title>
+    <title>Ingenuity Heroku Skeleton WebApp</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="Expires" content="-1"/>
     <meta http-equiv="Pragma" content="no-cache"/>
