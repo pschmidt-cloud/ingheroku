@@ -23,6 +23,7 @@ import java.util.Map;
  * accordance with the terms of any agreement or agreements you entered into with
  * Ingenuity Systems.
  */
+@RequestMapping("/home")
 @Controller
 public class HomeController {
 	protected static Logger logger = Logger.getLogger("HomeController");
