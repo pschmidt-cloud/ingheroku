@@ -16,20 +16,19 @@
     <meta http-equiv="Pragma" content="no-cache"/>
     <meta http-equiv="Cache-Control" content="no-cache"/>
 
-    <link rel="stylesheet" type="text/css" href="<c:url value="/css/core.css"/>"/>
-    <link rel="stylesheet" type="text/css" href="<c:url value="/css/icg.css"/>"/>
-    <link rel="stylesheet" type="text/css" href="<c:url value="/css/demo_table.css"/>"/>
-    <link rel="shortcut icon" href="<c:url value='/img/favicon.png'/>"/>
-    <link rel="stylesheet" type="text/css"
-          href="<c:url value="/css/jqueryui-1.8.20/themes/smoothness/jquery-ui.css"/>"/>
+    <link rel="stylesheet" type="text/css" href="/css/core.css">
+    <link rel="stylesheet" type="text/css" href="css/icg.css">
+    <link rel="stylesheet" type="text/css" href="/css/demo_table.css">
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/css/jqueryui-1.8.20/themes/smoothness/jquery-ui.css">
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
 
-    <script type="text/javascript" src="<c:url value="/js/jquery-1.7.2.min.js"/>"></script>
-    <script type="text/javascript" src="<c:url value="/js/jquery-ui-1.8.20.min.js"/>"></script>
-    <script type="text/javascript" src="<c:url value="/js/jquery.dataTables-1.9.1.min.js" />"></script>
-    <script type="text/javascript" src="<c:url value="/js/icgutils.js" />"></script>
-    <script type="text/javascript" src="<c:url value="/js/date.js" />"></script>
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-1.8.20.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.dataTables-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/icgutils.js"></script>
+    <script type="text/javascript" src="/js/date.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">

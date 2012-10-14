@@ -64,7 +64,7 @@
     </servlet-mapping>
 
     <welcome-file-list>
-        <welcome-file>ui/home.html</welcome-file>
+        <welcome-file>home/home.html</welcome-file>
     </welcome-file-list>
 
     <session-config>
