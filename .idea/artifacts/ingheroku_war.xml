@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ingheroku:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="ingheroku-0.1.0.BUILD-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ingheroku:war exploded" />
+    </root>
+  </artifact>
+</component>

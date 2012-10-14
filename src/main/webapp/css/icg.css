@@ -1,0 +1,194 @@
+/* start datatables */
+.dataTables_info {
+    padding-top: 0;
+}
+
+.dataTables_paginate {
+    padding-top: 0;
+}
+
+.css_right {
+    float: right;
+}
+
+#orderHistory_wrapper .fg-toolbar {
+    font-size: 0.8em
+}
+
+#theme_links span {
+    float: left;
+    padding: 2px 10px;
+}
+
+#orderHistory tr:hover {
+	background-color: #ECFFB3;
+}
+/* end datatables */
+
+p, h1, form {
+	border:none;
+	padding:0;
+	margin:0;
+}
+
+fieldset {
+    padding: 10px 0 10px 15px;
+    border:  1px solid #e1e1e1;
+}
+
+legend {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.javascriptDisabledNotice {
+	margin:0 auto; background-color: red; width: 100%; font-size: 14px; color: #ffffff;
+}
+
+:focus {
+	outline:1;
+}
+
+.form-content, .form-content-output, .coupon-order-history {
+    padding: 10px 20px 5px 20px;
+    border:1px solid #e1e1e1;
+
+    /* -- CSS3 - define rounded corners for the form -- */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    /* -- CSS3 - create a background graident -- */
+    background: -webkit-gradient(linear, 0% 0%, 0% 40%, from(#EEE), to(#FFFFFF));
+    background: -moz-linear-gradient(0% 40% 90deg,#FFF, #EEE);
+
+    /* -- CSS3 - add a drop shadow -- */
+    -webkit-box-shadow:0px 0 50px #ccc;
+    -moz-box-shadow:0px 0 50px #ccc;
+    box-shadow:0px 0 50px #ccc;
+}
+
+#user-details {
+    float: left;
+    padding-right: 10px;
+}
+
+#user-options {
+    width: 350px;
+    float: left;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.form-content, .form-content-output, .coupon-order-history {
+    margin:0 auto;
+    border-radius:10px;
+    background:#efefef;
+}
+
+.form-content-output {
+	width:350px;
+}
+
+.coupon-order-history h1.section-title {
+    font-size: 14px;
+    text-align: center;
+}
+
+.form-content h1.form-title {
+	text-align:center;
+	padding:0 0 20px;
+	font-size:14px;
+	/* text-transform:uppercase;   */
+}
+
+.form-content-output h1.form-title {
+	text-align:center;
+	padding:0 0 20px;
+	font-size:14px;
+	/* text-transform:uppercase;   */
+}
+
+.form-content div {
+	margin:0px 0;
+}
+
+.form-content label {
+	font-size:12px;
+    font-family: Arial;
+    display: block;
+}
+
+.nonblocklabel {
+    display: inline !important;
+}
+
+.form-content input[type="text"],
+.form-content input[type="email"],.form-content input[type="email"],
+.form-content input[type="textarea"],
+.form-content input[type="password"] {
+	padding:5px;
+	width:95%;
+	margin:5px 0;
+	border:1px solid #ccc;
+	-webkit-transition:border .5s ease-in;
+	-moz-transition:border .5s ease-in;
+	-o-transition:border .5s ease-in;
+	transition:border .5s ease-in;
+}
+
+.form-content select {
+    padding:  5px;
+    margin:  5px 0;
+    display: block;
+}
+
+.form-content textarea {
+    margin-bottom: 5px;
+}
+
+.form-content input[type="text"]:focus,
+.form-content input[type="email"]:focus,
+.form-content input[type="password"]:focus {
+	border:1px solid #336699;
+}
+
+.form-content p.captcha-info {
+	font-size:10px;
+	text-align:left;
+	padding:5px 0;
+}
+
+.form-content p.captcha-info span {
+	color:#ff0000;
+}
+
+.form-content p.note {
+	font-size:10px;
+	font-style:italic;
+	text-align:right;
+}
+
+.form-content .submit-button {
+	text-align:right;
+	margin-bottom:0;
+}
+
+.form-content .submit-button input {
+	background:#fff;
+	border:1px solid #ccc;
+    margin-top: 10px;
+	padding:5px 10px;
+	cursor:pointer;
+	-webkit-transition:border .5s ease-in;
+	-moz-transition:border .5s ease-in;
+	-o-transition:border .5s ease-in;
+	transition:border .5s ease-in;
+}
+
+.form-content .submit-button input:hover {
+	border:1px solid #336699;
+}
+
+
+
