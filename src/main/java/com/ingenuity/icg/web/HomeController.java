@@ -1,10 +1,10 @@
 package com.ingenuity.icg.web;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Map;
@@ -26,15 +26,13 @@ import java.util.Map;
 @RequestMapping("/home")
 @Controller
 public class HomeController {
-	protected static Logger logger = Logger.getLogger("HomeController");
-    //org.mortbay.jetty.webapp.WebAppContext c;
+	protected final Log log = LogFactory.getLog(getClass());
 
 	@RequestMapping(value = "/home.html", method = RequestMethod.GET)
     public ModelAndView showHomePage() {
 
-		logger.info("entering home page");
+		log.info("entering home page");
 
-        // This will resolve to /WEB-INF/jsp/home.jsp
         return new ModelAndView("home", "message", "hello there");
 	}
 
