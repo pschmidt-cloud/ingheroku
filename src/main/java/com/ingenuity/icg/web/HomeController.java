@@ -28,7 +28,7 @@ public class HomeController {
 	protected static Logger logger = Logger.getLogger("HomeController");
     //org.mortbay.jetty.webapp.WebAppContext c;
 
-	@RequestMapping(value = "/home", method = RequestMethod.GET)
+	@RequestMapping(value = "/home.html", method = RequestMethod.GET)
     public ModelAndView showHomePage() {
 
 		logger.info("entering home page");

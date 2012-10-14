@@ -60,11 +60,11 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>ingheroku</servlet-name>
-        <url-pattern>/ingheroku/*</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
     <welcome-file-list>
-        <welcome-file>ingheroku/home</welcome-file>
+        <welcome-file>home.html</welcome-file>
     </welcome-file-list>
 
     <session-config>
