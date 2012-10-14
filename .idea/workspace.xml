@@ -14,14 +14,7 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f85e11ef-5fc5-43a1-9e78-6cf69d6d6c45" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/GreetingController.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ingheroku.iml" afterPath="$PROJECT_DIR$/ingheroku.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-    </list>
+    <list default="true" id="f85e11ef-5fc5-43a1-9e78-6cf69d6d6c45" name="Default" comment="" />
     <ignored path="ingheroku.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -118,7 +111,7 @@
       <file leaf-file-name="HomeController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="66" selection-start="853" selection-end="853" vertical-scroll-proportion="0.34653464">
+            <state line="35" column="103" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.7029703">
               <folding />
             </state>
           </provider>
@@ -997,13 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/CategoryContoller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="49" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="74" selection-start="3187" selection-end="3187" vertical-scroll-proportion="0.0">
@@ -1027,9 +1013,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/CategoryContoller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="49" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="66" selection-start="853" selection-end="853" vertical-scroll-proportion="0.34653464">
+        <state line="35" column="103" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.7029703">
           <folding />
         </state>
       </provider>
