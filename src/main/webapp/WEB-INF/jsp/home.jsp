@@ -75,23 +75,8 @@
     </div>
 </div>
 
-
-<div id="header">
-    <div class="headerGradient">
-        <div id="headRight">
-            <span id="tellFriendBtn" class="headerGradientLink">Ingenuity Coupon Generator</span>
-        </div>
-
-        <div id="headLeft">
-			<span id="welcomeLabel">Welcome,
-            </span>&nbsp;|&nbsp;
-            <span classs="logout headerGradientLink"><a href="<%=request.getContextPath()%>/logout.html">Logout</a>
-            </span>
-        </div>
-    </div>
-</div>
-
 <div id="content">
+    <br /><br />
     <!-- Main hero unit for a primary marketing message or call to action -->
     <div class="hero-unit">
         <h1>Hello, world!</h1>
