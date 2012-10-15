@@ -52,23 +52,17 @@ public class UploadController {
             return "upload";
         }
 
-        // Some type of file processing...
-        System.err.println("-------------------------------------------");
-        System.err.println("Test upload: " + uploadItem.getDesc());
-        System.err.println("Test upload: " + uploadItem.getFileData().getOriginalFilename());
-        System.err.println("-------------------------------------------");
-
         try {
-             // Configuration
-             ClientConfig clientConfig = new ClientConfig();
-             LinkedHashSet<String> servers = new LinkedHashSet<String>();
-             servers.add("http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e");
-             clientConfig.getServerProperties().put(ClientConstants.SERVER_LIST,servers);
+            // Configuration
+            ClientConfig clientConfig = new ClientConfig();
+            LinkedHashSet<String> servers = new LinkedHashSet<String>();
+            servers.add("http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e");
+            clientConfig.getServerProperties().put(ClientConstants.SERVER_LIST, servers);
 
-             // Construct a new Jest client according to configuration via factory
-             JestClientFactory factory = new JestClientFactory();
-             factory.setClientConfig(clientConfig);
-             JestClient client = factory.getObject();
+            // Construct a new Jest client according to configuration via factory
+            JestClientFactory factory = new JestClientFactory();
+            factory.setClientConfig(clientConfig);
+            JestClient client = factory.getObject();
 
             Article source = new Article();
             source.setAuthor("Alexander Dumas");
