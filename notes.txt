@@ -1,0 +1,9 @@
+curl -XPUT http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/user/dilbert -d '{ "name" : "Dilbert Brown" }'
+curl  http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/article/_search?q=author:dumas
+curl  http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/user/_search?q=name:dilbert
+
+mvn package
+java -jar target/dependency/webapp-runner.jar target/*.war
+
+git push -u origin master
+git push heroku master

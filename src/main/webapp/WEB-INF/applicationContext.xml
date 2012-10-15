@@ -41,26 +41,31 @@
     requests to the container's default Servlet -->
     <mvc:default-servlet-handler/>
 
-    <!--
-    <bean id="icgDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
-		<property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
-		<property name="url" value="${icg.datasource.url}"/>
-		<property name="username" value="${icg.datasource.username}"/>
-		<property name="password" value="${icg.datasource.password}"/>
-		<property name="poolPreparedStatements" value="true"/>
-		<property name="maxActive" value="${icg.datasource.maxconnections}"/>
-		<property name="maxIdle" value="10"/>
-	</bean>
-	-->
-
     <!--  this allows the use of @Required annotations for dependencies -->
 	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
 
-    <!-- enable the use of @Transactional annotations for bean "transactionManager" -->
-    <!--
-    <tx:annotation-driven transaction-manager="isaTxManager"/>
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- Max size in bytes. -->
+        <property name="maxUploadSize" value="100000"/>
+    </bean>
 
-    <bean id="isaTxManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-      <property name="dataSource" ref="icgDataSource"/>
-    </bean>-->
+    <bean id="dbUrl" class="java.net.URI"> <constructor-arg value="${DATABASE_URL}"/> </bean>
+    <bean class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" id="dataSource">
+        <property name="driverClassName" value="${database.driverClassName}"/>
+        <property value="#{ 'jdbc:postgresql://' + @dbUrl.getHost() + @dbUrl.getPath() }" name="url"/>
+        <property value="#{ @dbUrl.getUserInfo().split(':')[0] }" name="username"/>
+        <property value="#{ @dbUrl.getUserInfo().split(':')[1] }" name="password"/>
+        <property name="testOnBorrow" value="true"/>
+        <property name="testOnReturn" value="true"/>
+        <property name="testWhileIdle" value="true"/>
+        <property name="timeBetweenEvictionRunsMillis" value="1800000"/>
+        <property name="numTestsPerEvictionRun" value="3"/>
+        <property name="minEvictableIdleTimeMillis" value="1800000"/>
+        <property name="validationQuery" value="SELECT version();"/>
+    </bean>
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+      <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!-- enable the use of @Transactional annotations for bean "transactionManager" -->
+    <tx:annotation-driven transaction-manager="txManager"/>
 </beans>

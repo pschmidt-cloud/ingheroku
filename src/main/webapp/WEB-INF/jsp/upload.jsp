@@ -78,71 +78,25 @@
 
 <div id="content">
     <br /><br />
+    <!-- Main hero unit for a primary marketing message or call to action -->
     <div class="hero-unit">
-        <h1>Hello, world!</h1>
+        <h2>Please upload a file</h2>
 
-        <p>This is a template for a simple marketing or informational
-            website. It includes a large callout called the hero unit and three
-            supporting pieces of content. Use it as a starting point to create
-            something more unique.</p>
-        <a class="btn btn-primary" data-toggle="modal" href="#myModal">Launch Modal</a>
+        <form:form modelAttribute="uploadItem" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Upload Fields</legend>
+                    <form:label for="desc" path="desc">Description</form:label><br/>
+                    <form:input path="desc"/>
+
+                    <form:label for="fileData" path="fileData">File</form:label><br/>
+                    <form:input path="fileData" type="file"/>
+                <p>
+                    <input type="submit" />
+                </p>
+
+            </fieldset>
+        </form:form>
     </div>
-
-    <!-- Example row of columns -->
-    <div class="row">
-        <div class="span4">
-            <h2>Heading</h2>
-
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce
-                dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                mollis euismod. Donec sed odio dui. </p>
-
-            <p><a class="btn" href="#">View details »</a></p>
-        </div>
-        <div class="span4">
-            <h2>Heading</h2>
-
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce
-                dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                mollis euismod. Donec sed odio dui. </p>
-
-            <p><a class="btn" href="#">View details »</a></p>
-        </div>
-        <div class="span4">
-            <h2>Heading</h2>
-
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis
-                in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                ut fermentum massa justo sit amet risus.</p>
-
-            <p><a class="btn" href="#">View details »</a></p>
-        </div>
-    </div>
-
-    <hr>
-
-    <footer>
-        <p>© Company 2012</p>
-    </footer>
-
-    <div class="modal hide" id="myModal">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">×</button>
-            <h3>Modal header</h3>
-        </div>
-        <div class="modal-body">
-            <p>One fine body</p>
-        </div>
-        <div class="modal-footer">
-            <a href="#" class="btn" data-dismiss="modal">Close</a>
-            <a href="#" class="btn btn-primary">Save changes</a>
-        </div>
-    </div>
-
-</div>
 </div>
 
 

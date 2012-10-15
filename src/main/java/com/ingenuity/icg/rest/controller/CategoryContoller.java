@@ -1,4 +1,4 @@
-package com.ingenuity.icg.web;
+package com.ingenuity.icg.rest.controller;
 
 import com.ingenuity.icg.domain.Category;
 import org.apache.commons.logging.Log;

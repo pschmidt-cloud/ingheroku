@@ -26,6 +26,11 @@
             <name>Spring Maven Milestone Repository</name>
             <url>http://maven.springframework.org/milestone</url>
         </repository>
+         <repository>
+           <id>sonatype</id>
+           <name>Sonatype Groups</name>
+           <url>https://oss.sonatype.org/content/groups/public/</url>
+         </repository>
     </repositories>
 
      <pluginRepositories>
@@ -201,6 +206,11 @@
           <version>2.1</version>
         </dependency>
         <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.2.2</version>
+	    </dependency>
+        <dependency>
             <groupId>commons-validator</groupId>
             <artifactId>commons-validator</artifactId>
             <version>1.2.0</version>
@@ -209,6 +219,11 @@
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
             <version>2.1</version>
+        </dependency>
+        <dependency>
+          <groupId>io.searchbox</groupId>
+          <artifactId>jest</artifactId>
+          <version>0.0.1</version>
         </dependency>
     </dependencies>
 </project>

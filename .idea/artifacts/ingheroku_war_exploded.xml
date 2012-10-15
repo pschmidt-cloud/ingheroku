@@ -51,11 +51,27 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-taglibs:2.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-acl:2.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.1" />
+          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.2" />
           <element id="library" level="project" name="Maven: commons-validator:commons-validator:1.2.0" />
           <element id="library" level="project" name="Maven: commons-digester:commons-digester:1.6" />
           <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.0.b2" />
           <element id="library" level="project" name="Maven: oro:oro:2.0.8" />
           <element id="library" level="project" name="Maven: joda-time:joda-time:2.1" />
+          <element id="library" level="project" name="Maven: io.searchbox:jest:0.0.1" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.2" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore-nio:4.2" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.2-beta1" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpasyncclient:4.0-beta1" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:13.0.1" />
+          <element id="library" level="project" name="Maven: org.elasticsearch:elasticsearch:0.19.8" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-core:3.6.0" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-analyzers:3.6.0" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-queries:3.6.0" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-memory:3.6.0" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-highlighter:3.6.0" />
+          <element id="library" level="project" name="Maven: cglib:cglib:2.2.2" />
+          <element id="library" level="project" name="Maven: asm:asm:3.3.1" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.1" />
         </element>
       </element>
     </root>

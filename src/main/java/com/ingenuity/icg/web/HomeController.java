@@ -28,7 +28,7 @@ import java.util.Map;
 public class HomeController {
 	protected final Log log = LogFactory.getLog(getClass());
 
-	@RequestMapping(value = "/home.html", method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
     public ModelAndView showHomePage() {
 
 		log.info("entering home page");
