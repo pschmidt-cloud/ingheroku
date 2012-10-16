@@ -1,7 +1,9 @@
 package com.ingenuity.icg.web;
 
 import com.ingenuity.icg.domain.Article;
+import com.ingenuity.icg.domain.Dataset;
 import com.ingenuity.icg.domain.UploadItem;
+import com.ingenuity.icg.util.DatasetParserHelper;
 import io.searchbox.client.JestClient;
 import io.searchbox.client.JestClientFactory;
 import io.searchbox.client.config.ClientConfig;
@@ -9,14 +11,20 @@ import io.searchbox.client.config.ClientConstants;
 import io.searchbox.core.Index;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
+import java.io.FileInputStream;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
 import java.util.LinkedHashSet;
+import java.util.Map;
 
 /**
  * Created by IntelliJ IDEA.
@@ -34,8 +42,10 @@ import java.util.LinkedHashSet;
  */
 @Controller
 @RequestMapping(value = "/upload")
-public class UploadController {
+public class DatasetUploadController {
     protected final Log log = LogFactory.getLog(getClass());
+    @Autowired
+    DatasetParserHelper datasetParserHelper;
 
     @RequestMapping(method = RequestMethod.GET)
     public String getUploadForm(Model model) {
@@ -44,15 +54,25 @@ public class UploadController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String create(UploadItem uploadItem, BindingResult result) {
+    public ModelAndView create(UploadItem uploadItem, BindingResult result) {
         if (result.hasErrors()) {
             for (ObjectError error : result.getAllErrors()) {
                 System.err.println("Error: " + error.getCode() + " - " + error.getDefaultMessage());
             }
-            return "upload";
+            //return "upload";
+            return new ModelAndView("upload", "message", "errors in upload");
         }
 
+        /*
         try {
+            String str = new String(uploadItem.getFileData().getBytes());
+            Map<String, String> keywordMap = datasetParserHelper.convertStringToMap(str);
+
+            Dataset dataset = new Dataset();
+            dataset.setFileName(uploadItem.getFileData().getOriginalFilename());
+            dataset.setDescription(uploadItem.getDesc());
+            dataset.setKeywords(keywordMap);
+
             // Configuration
             ClientConfig clientConfig = new ClientConfig();
             LinkedHashSet<String> servers = new LinkedHashSet<String>();
@@ -64,16 +84,14 @@ public class UploadController {
             factory.setClientConfig(clientConfig);
             JestClient client = factory.getObject();
 
-            Article source = new Article();
-            source.setAuthor("Alexander Dumas");
-            source.setContent("The Three Muskateers part 2");
-
-            Index index = new Index.Builder(source).index("index1").type("article").build();
+            Index index = new Index.Builder(dataset).index("index1").type("dataset").build();
             client.execute(index);
         } catch (Exception ex) {
             log.warn(ex);
         }
+        */
 
-        return "redirect:/home";
+        //return "redirect:/home";
+        return new ModelAndView("upload", "message", "upload successful");
     }
 }
