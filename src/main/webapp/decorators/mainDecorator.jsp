@@ -42,13 +42,13 @@
         <decorator:title default="{ Unknown Page - shouldn't see this, since pages should define title }"/>
     </title>
 
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/core.css">
     <link rel="stylesheet" type="text/css" href="css/icg.css">
     <link rel="stylesheet" type="text/css" href="/css/demo_table.css">
     <link rel="shortcut icon" href="/img/favicon.png">
     <link rel="stylesheet" type="text/css" href="/css/jqueryui-1.8.20/themes/smoothness/jquery-ui.css">
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
 
     <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="/js/jquery-ui-1.8.20.min.js"></script>
@@ -86,7 +86,16 @@
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li id="bootstrap_home"><a href="/home">Home</a></li>
-                        <li id="bootstrap_upload"><a href="/upload">Upload</a></li>
+                        <li class="dropdown" id="bootstrap_dataset_upload">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#bootstrap_dataset_upload">
+                                Upload
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/dataset_upload">Upload Dataset</a></li>
+                                <li><a href="#">Upload IPA cited Publication</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
 
