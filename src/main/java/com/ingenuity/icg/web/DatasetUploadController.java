@@ -41,7 +41,7 @@ import java.util.Map;
  * Ingenuity Systems.
  */
 @Controller
-@RequestMapping(value = "/upload")
+@RequestMapping(value = "/dataset_upload")
 public class DatasetUploadController {
     protected final Log log = LogFactory.getLog(getClass());
     @Autowired
@@ -50,7 +50,7 @@ public class DatasetUploadController {
     @RequestMapping(method = RequestMethod.GET)
     public String getUploadForm(Model model) {
         model.addAttribute(new UploadItem());
-        return "upload";
+        return "dataset_upload";
     }
 
     @RequestMapping(method = RequestMethod.POST)
@@ -59,11 +59,9 @@ public class DatasetUploadController {
             for (ObjectError error : result.getAllErrors()) {
                 System.err.println("Error: " + error.getCode() + " - " + error.getDefaultMessage());
             }
-            //return "upload";
-            return new ModelAndView("upload", "message", "errors in upload");
+            return new ModelAndView("upload", "status", "errors in upload");
         }
 
-        /*
         try {
             String str = new String(uploadItem.getFileData().getBytes());
             Map<String, String> keywordMap = datasetParserHelper.convertStringToMap(str);
@@ -89,9 +87,8 @@ public class DatasetUploadController {
         } catch (Exception ex) {
             log.warn(ex);
         }
-        */
 
         //return "redirect:/home";
-        return new ModelAndView("upload", "message", "upload successful");
+        return new ModelAndView("dataset_upload", "status", "STATUS: successful upload of " + uploadItem.getFileData().getOriginalFilename());
     }
 }
