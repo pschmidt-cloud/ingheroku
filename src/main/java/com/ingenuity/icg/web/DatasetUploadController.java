@@ -6,12 +6,14 @@ import com.ingenuity.icg.domain.UploadItem;
 import com.ingenuity.icg.util.DatasetParserHelper;
 import io.searchbox.client.JestClient;
 import io.searchbox.client.JestClientFactory;
+import io.searchbox.client.JestResult;
 import io.searchbox.client.config.ClientConfig;
 import io.searchbox.client.config.ClientConstants;
 import io.searchbox.core.Index;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -43,6 +45,10 @@ import java.util.Map;
 @Controller
 @RequestMapping(value = "/dataset_upload")
 public class DatasetUploadController {
+    @Value("${elastic_server_url}")
+    private String elasticServerUrl;
+     @Value("${elastic_server_index}")
+    private String elasticServerIndex;
     protected final Log log = LogFactory.getLog(getClass());
     @Autowired
     DatasetParserHelper datasetParserHelper;
@@ -74,7 +80,7 @@ public class DatasetUploadController {
             // Configuration
             ClientConfig clientConfig = new ClientConfig();
             LinkedHashSet<String> servers = new LinkedHashSet<String>();
-            servers.add("http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e");
+            servers.add(elasticServerUrl);
             clientConfig.getServerProperties().put(ClientConstants.SERVER_LIST, servers);
 
             // Construct a new Jest client according to configuration via factory
@@ -82,8 +88,9 @@ public class DatasetUploadController {
             factory.setClientConfig(clientConfig);
             JestClient client = factory.getObject();
 
-            Index index = new Index.Builder(dataset).index("index1").type("dataset").build();
-            client.execute(index);
+            Index index = new Index.Builder(dataset).index(elasticServerIndex).type("meta_data").build();
+            JestResult jr = client.execute(index);
+            log.info(jr.getJsonString());
         } catch (Exception ex) {
             log.warn(ex);
         }

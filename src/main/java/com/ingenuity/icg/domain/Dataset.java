@@ -19,6 +19,8 @@ import java.util.Map;
 public class Dataset {
     private String fileName;
     private String description;
+    private String folderType = "dataset";
+    private String userObjectId = "5055";
     private Map<String, String> keywords;
 
     public String getFileName() {
@@ -43,5 +45,21 @@ public class Dataset {
 
     public void setKeywords(Map<String, String> keywords) {
         this.keywords = keywords;
+    }
+
+    public String getFolderType() {
+        return folderType;
+    }
+
+    public void setFolderType(String folderType) {
+        this.folderType = folderType;
+    }
+
+    public String getUserObjectId() {
+        return userObjectId;
+    }
+
+    public void setUserObjectId(String userObjectId) {
+        this.userObjectId = userObjectId;
     }
 }
