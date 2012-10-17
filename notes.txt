@@ -1,9 +1,21 @@
+elasticsearch:
 curl -XPUT http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/user/dilbert -d '{ "name" : "Dilbert Brown" }'
-curl  http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/article/_search?q=author:dumas
 curl  http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/user/_search?q=name:dilbert
+curl  http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/article/_search?q=author:dumas
+curl  http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/dataset/_search?q=keywords:Liver
+
+solr:
+URL=http://localhost:8983/solr/update/json
+curl $URL -H 'Content-type:application/json' -d ' [ { "id" : "MyTestDocument", "title" : "This is just a test" } ]'
+curl http://localhost:8983/solr/select/?q=title:test
+curl http://localhost:8983/solr/select/?q=*:*
+curl http://localhost:8983/solr/select/?wt=json&indent=on&q=*:*&fl=name&facet=true&facet.field=cat
 
 mvn package
 java -jar target/dependency/webapp-runner.jar target/*.war
 
 git push -u origin master
 git push heroku master
+
+ssh-keygen
+heroku keys:add $HOME/.ssh/id_rsa.pub
