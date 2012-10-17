@@ -1,8 +1,28 @@
 elasticsearch:
+#curl -XDELETE 'http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/'
 curl -XPUT http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/user/dilbert -d '{ "name" : "Dilbert Brown" }'
 curl  http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/user/_search?q=name:dilbert
 curl  http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/article/_search?q=author:dumas
 curl  http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/dataset/_search?q=keywords:Liver
+curl  http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/meta_data/_search?q=keywords:Liver
+
+# dataset example
+#curl -XDELETE 'http://localhost:9200/emdindex1/'
+curl -XPUT 'http://localhost:9200/emdindex1/meta_data/1' -d '{"userObjectId":444, "folderType":"dataset", "keywords":{"tissue_type":"Liver","external_experiment_id":"7330943"}}'
+curl -XPUT 'http://localhost:9200/emdindex1/meta_data/2' -d '{"userObjectId":666, "folderType":"dataset", "keywords":{"tissue_type":"Liver","external_experiment_id":"7330943"}}'
+curl -XPUT 'http://localhost:9200/emdindex1/meta_data/3' -d '{"userObjectId":5055, "folderType":"analysis", "keywords":{"tissue_type":"Liver","external_experiment_id":"7330943"}}'
+curl 'http://localhost:9200/emdindex1/_search?q=tissue_type:Liver&pretty=true'
+curl  http://localhost:9200/emdindex1/meta_data/_search?q=tissue_type:Liver
+
+# facet search on folderType
+curl -X POST "http://localhost:9200/emdindex1/_search?pretty=true" -d '
+  {
+    "query" : { "query_string" : {"query" : "*"} },
+    "facets" : {
+      "tags" : { "terms" : {"field" : "folderType"} }
+    }
+  }
+'
 
 solr:
 URL=http://localhost:8983/solr/update/json
