@@ -32,8 +32,7 @@ public class DatasetParserHelper {
 
         System.out.println(s);
 
-        //String[] lines = s.split("\r\n|\r|\n");
-        String[] lines = s.split(System.getProperty("line.separator"));
+        String[] lines = s.split("\r\n|\r|\n");
         for(String str : lines) {
             if (str.startsWith("key")) {
                 // skip first header row
@@ -42,7 +41,7 @@ public class DatasetParserHelper {
 
             String[] keyvalues = str.split("\t");
             if (keyvalues != null && keyvalues.length == 2) {
-                keyValuesMap.put(keyvalues[0], keyvalues[1]);
+                keyValuesMap.put(keyvalues[0].trim(), keyvalues[1].trim());
             }
         }
 
@@ -75,8 +74,7 @@ public class DatasetParserHelper {
         String s = charBuffer.toString();
         System.out.println(s);
 
-        //String[] lines = s.split("\r\n|\r|\n");
-        String[] lines = s.split(System.getProperty("line.separator"));
+        String[] lines = s.split("\r\n|\r|\n");
         for(String str : lines) {
             if (str.startsWith("key")) {
                 // skip first header row
@@ -85,7 +83,7 @@ public class DatasetParserHelper {
 
             String[] keyvalues = str.split("\t");
             if (keyvalues != null && keyvalues.length == 2) {
-                keyValuesMap.put(keyvalues[0], keyvalues[1]);
+                keyValuesMap.put(keyvalues[0].trim(), keyvalues[1].trim());
             }
         }
 
