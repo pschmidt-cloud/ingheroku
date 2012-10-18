@@ -24,9 +24,16 @@ curl -X POST "http://localhost:9200/emdindex1/_search?pretty=true" -d '
   }
 '
 
+curl -XPUT 'http://uedev29:9200/emdindex1/meta_data/1' -d '{"userObjectId":444, "folderType":"dataset", "keywords":{"tissue_type":"Liver","external_experiment_id":"7330943"}}'
+curl -XPUT 'http://uedev29:9200/emdindex1/meta_data/2' -d '{"userObjectId":666, "folderType":"dataset", "keywords":{"tissue_type":"Liver","external_experiment_id":"7330943"}}'
+curl -XPUT 'http://uedev29:9200/emdindex1/meta_data/3' -d '{"userObjectId":5055, "folderType":"analysis", "keywords":{"tissue_type":"Liver","external_experiment_id":"7330943"}}'
+curl 'http://uedev29:9200/emdindex1/_search?q=tissue_type:Liver&pretty=true'
+curl  http://uedev29:9200/emdindex1/meta_data/_search?q=tissue_type:Liver
+
 solr:
 URL=http://localhost:8983/solr/update/json
 curl $URL -H 'Content-type:application/json' -d ' [ { "id" : "MyTestDocument", "title" : "This is just a test" } ]'
+curl $URL -H 'Content-type:application/json' -d ' [ { "id" : "test2", "title" : "t1", "content" : "tissue_type":"Liver" }]'
 curl http://localhost:8983/solr/select/?q=title:test
 curl http://localhost:8983/solr/select/?q=*:*
 curl http://localhost:8983/solr/select/?wt=json&indent=on&q=*:*&fl=name&facet=true&facet.field=cat
