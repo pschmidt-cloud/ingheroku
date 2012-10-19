@@ -1,4 +1,4 @@
-package com.ingenuity.icg.util;
+package com.ingenuity.ingheroku.app.ui.util;
 
 import org.springframework.stereotype.Component;
 

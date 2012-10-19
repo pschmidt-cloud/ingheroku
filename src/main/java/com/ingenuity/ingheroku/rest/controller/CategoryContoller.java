@@ -1,6 +1,6 @@
-package com.ingenuity.icg.rest.controller;
+package com.ingenuity.ingheroku.rest.controller;
 
-import com.ingenuity.icg.domain.Category;
+import com.ingenuity.ingheroku.rest.model.Category;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Controller;

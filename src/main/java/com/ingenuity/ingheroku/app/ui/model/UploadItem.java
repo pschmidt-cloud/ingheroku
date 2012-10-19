@@ -1,4 +1,4 @@
-package com.ingenuity.icg.domain;
+package com.ingenuity.ingheroku.app.ui.model;
 
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
@@ -16,17 +16,9 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
  * accordance with the terms of any agreement or agreements you entered into with
  * Ingenuity Systems.
  */
-public class SearchItem {
-    private String searchTerm;
+public class UploadItem {
     private String desc;
-
-    public String getSearchTerm() {
-        return searchTerm;
-    }
-
-    public void setSearchTerm(String searchTerm) {
-        this.searchTerm = searchTerm;
-    }
+    private CommonsMultipartFile fileData;
 
     public String getDesc() {
         return desc;
@@ -34,5 +26,13 @@ public class SearchItem {
 
     public void setDesc(String desc) {
         this.desc = desc;
+    }
+
+    public CommonsMultipartFile getFileData() {
+        return fileData;
+    }
+
+    public void setFileData(CommonsMultipartFile fileData) {
+        this.fileData = fileData;
     }
 }

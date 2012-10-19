@@ -1,7 +1,8 @@
-package com.ingenuity.icg.search;
+package com.ingenuity.ingheroku.search.component;
 
-import com.ingenuity.icg.domain.SearchItem;
-import com.ingenuity.icg.util.DatasetParserHelper;
+import com.ingenuity.ingheroku.search.model.SearchDocument;
+import com.ingenuity.ingheroku.app.ui.model.SearchItem;
+import com.ingenuity.ingheroku.app.ui.util.DatasetParserHelper;
 import io.searchbox.client.JestClient;
 import io.searchbox.client.JestClientFactory;
 import io.searchbox.client.JestResult;

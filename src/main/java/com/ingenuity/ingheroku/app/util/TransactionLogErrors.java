@@ -1,4 +1,4 @@
-package com.ingenuity.icg.app.util;
+package com.ingenuity.ingheroku.app.util;
 
 /**
  * Created by IntelliJ IDEA.

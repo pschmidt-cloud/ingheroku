@@ -1,6 +1,4 @@
-package com.ingenuity.icg.domain;
-
-import org.springframework.web.multipart.commons.CommonsMultipartFile;
+package com.ingenuity.ingheroku.app.ui.model;
 
 /**
  * Created by IntelliJ IDEA.
@@ -16,9 +14,17 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
  * accordance with the terms of any agreement or agreements you entered into with
  * Ingenuity Systems.
  */
-public class UploadItem {
+public class SearchItem {
+    private String searchTerm;
     private String desc;
-    private CommonsMultipartFile fileData;
+
+    public String getSearchTerm() {
+        return searchTerm;
+    }
+
+    public void setSearchTerm(String searchTerm) {
+        this.searchTerm = searchTerm;
+    }
 
     public String getDesc() {
         return desc;
@@ -26,13 +32,5 @@ public class UploadItem {
 
     public void setDesc(String desc) {
         this.desc = desc;
-    }
-
-    public CommonsMultipartFile getFileData() {
-        return fileData;
-    }
-
-    public void setFileData(CommonsMultipartFile fileData) {
-        this.fileData = fileData;
     }
 }

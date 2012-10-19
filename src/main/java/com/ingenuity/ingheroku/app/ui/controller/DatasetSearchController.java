@@ -1,8 +1,8 @@
-package com.ingenuity.icg.web;
+package com.ingenuity.ingheroku.app.ui.controller;
 
-import com.ingenuity.icg.domain.SearchItem;
-import com.ingenuity.icg.search.ElasticSearchClient;
-import com.ingenuity.icg.util.DatasetParserHelper;
+import com.ingenuity.ingheroku.app.ui.model.SearchItem;
+import com.ingenuity.ingheroku.app.ui.util.DatasetParserHelper;
+import com.ingenuity.ingheroku.search.component.ElasticSearchClient;
 import io.searchbox.client.JestResult;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

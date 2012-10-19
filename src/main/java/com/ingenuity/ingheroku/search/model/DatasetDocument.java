@@ -1,6 +1,4 @@
-package com.ingenuity.icg.domain;
-
-import com.ingenuity.icg.search.SearchDocument;
+package com.ingenuity.ingheroku.search.model;
 
 import java.util.Map;
 

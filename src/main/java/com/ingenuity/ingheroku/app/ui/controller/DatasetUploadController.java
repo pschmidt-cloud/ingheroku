@@ -1,9 +1,9 @@
-package com.ingenuity.icg.web;
+package com.ingenuity.ingheroku.app.ui.controller;
 
-import com.ingenuity.icg.domain.DatasetDocument;
-import com.ingenuity.icg.domain.UploadItem;
-import com.ingenuity.icg.search.ElasticSearchClient;
-import com.ingenuity.icg.util.DatasetParserHelper;
+import com.ingenuity.ingheroku.search.component.ElasticSearchClient;
+import com.ingenuity.ingheroku.search.model.DatasetDocument;
+import com.ingenuity.ingheroku.app.ui.model.UploadItem;
+import com.ingenuity.ingheroku.app.ui.util.DatasetParserHelper;
 import io.searchbox.client.JestResult;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

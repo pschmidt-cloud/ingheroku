@@ -1,10 +1,10 @@
-package com.ingenuity.icg.search;
+package com.ingenuity.ingheroku.rest.model;
 
 /**
  * Created by IntelliJ IDEA.
  * User: pschmidt
- * Date: 10/18/12
- * Time: 7:24 PM
+ * Date: 10/13/12
+ * Time: 7:21 PM
  * <p/>
  * Copyright (C) 2010 Ingenuity Systems, Inc. All rights reserved.
  * <p/>
@@ -14,14 +14,23 @@ package com.ingenuity.icg.search;
  * accordance with the terms of any agreement or agreements you entered into with
  * Ingenuity Systems.
  */
-public class SearchDocument {
-    private String version = "1.0";
+public class Category {
+    private String name;
+    private String desc;
 
-    public String getVersion() {
-        return version;
+    public String getName() {
+        return name;
     }
 
-    public void setVersion(String version) {
-        this.version = version;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 }

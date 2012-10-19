@@ -15,12 +15,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f85e11ef-5fc5-43a1-9e78-6cf69d6d6c45" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/Article.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/app/util/TransactionLogErrors.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/app/util/TransactionLogErrors.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/app/util/UserCache.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/app/util/UserCache.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/Category.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/rest/model/Category.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/DatasetDocument.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/search/model/DatasetDocument.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/SearchItem.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/app/ui/model/SearchItem.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/UploadItem.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/app/ui/model/UploadItem.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/rest/controller/CategoryContoller.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/rest/controller/CategoryContoller.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/ElasticSearchClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/search/component/ElasticSearchClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/SearchDocument.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/search/model/SearchDocument.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/util/DatasetParserHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/app/ui/util/DatasetParserHelper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetSearchController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/app/ui/controller/DatasetSearchController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetUploadController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/app/ui/controller/DatasetUploadController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/app/ui/controller/HomeController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes.txt" afterPath="$PROJECT_DIR$/notes.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/database.properties" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_search.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_search.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="ingheroku.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,9 +99,9 @@
         </entry>
       </file>
       <file leaf-file-name="DatasetUploadController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetUploadController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/app/ui/controller/DatasetUploadController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="68" selection-start="2284" selection-end="2284" vertical-scroll-proportion="0.0">
+            <state line="24" column="16" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,7 +110,7 @@
       <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="7" selection-start="2243" selection-end="2243" vertical-scroll-proportion="-17.045454">
+            <state line="80" column="65" selection-start="2748" selection-end="2748" vertical-scroll-proportion="-14.272727">
               <folding />
             </state>
           </provider>
@@ -118,7 +128,7 @@
       <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="7" selection-start="3055" selection-end="3055" vertical-scroll-proportion="-5.7234044">
+            <state line="59" column="7" selection-start="3055" selection-end="3055" vertical-scroll-proportion="-3.8085105">
               <folding />
             </state>
           </provider>
@@ -130,46 +140,45 @@
       <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="85" selection-start="505" selection-end="505" vertical-scroll-proportion="-8.125">
+            <state line="4" column="8" selection-start="40" selection-end="62" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ingheroku-servlet.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/ingheroku-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ElasticSearchClient.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/ElasticSearchClient.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/search/component/ElasticSearchClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="36" selection-start="1495" selection-end="1495" vertical-scroll-proportion="0.0">
+            <state line="41" column="36" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DatasetSearchController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetSearchController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/app/ui/controller/DatasetSearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.0">
+            <state line="37" column="0" selection-start="1383" selection-end="1383" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/rest/model/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="15" selection-start="539" selection-end="547" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataset_search.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dataset_search.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_search.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="30" selection-start="82" selection-end="82" vertical-scroll-proportion="0.06787331">
+            <state line="2" column="30" selection-start="82" selection-end="82" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -187,25 +196,25 @@
       <file leaf-file-name="mainDecorator.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/decorators/mainDecorator.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="101" selection-start="3240" selection-end="3240" vertical-scroll-proportion="-2.5">
+            <state line="31" column="0" selection-start="1171" selection-end="1186" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.properties" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="database.properties" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="83" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="0.21604939">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DatasetDocument.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/DatasetDocument.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/search/model/DatasetDocument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="94" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+            <state line="18" column="13" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -225,22 +234,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/datase_search.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/util/ElasticSearchHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/util/ElasticSearchClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/SearchEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/Dataset.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetSearchController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/decorators/mainDecorator.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetUploadController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/ElasticSearchClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/DatasetDocument.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_search.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/app/util/TransactionLogErrors.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/app/ui/controller/DatasetSearchController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/ElasticSearchClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/model/DatasetDocument.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/component/ElasticSearchClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/search/component/ElasticSearchClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/rest/model/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
       </list>
     </option>
   </component>
@@ -540,11 +549,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="icg" />
+              <option name="myItemId" value="ingheroku" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -570,7 +583,207 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="icg" />
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -600,11 +813,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="icg" />
+              <option name="myItemId" value="ingheroku" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -630,37 +851,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="icg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingheroku" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="ingheroku" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1054,6 +1257,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26587301" sideWeight="0.993865" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1070,7 +1274,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1100,7 +1303,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added search" />
+    <option name="LAST_COMMIT_MESSAGE" value="and fixed syntax error.." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1119,6 +1322,10 @@
     <MESSAGE value="Added elastic search props" />
     <MESSAGE value="Fixed to use properties file" />
     <MESSAGE value="Added search" />
+    <MESSAGE value="minor fixes" />
+    <MESSAGE value="set welcome-file to index.jsp" />
+    <MESSAGE value="removed coupon references :)" />
+    <MESSAGE value="and fixed syntax error.." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1128,37 +1335,43 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/Article.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_search.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.51502144">
+        <state line="2" column="30" selection-start="82" selection-end="82" vertical-scroll-proportion="-1.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/UploadItem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="32" selection-start="845" selection-end="845" vertical-scroll-proportion="0.9259259">
+        <state line="59" column="7" selection-start="3055" selection-end="3055" vertical-scroll-proportion="-3.8085105">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/ingheroku-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.002386635">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/app/util/UserCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="581" selection-end="581" vertical-scroll-proportion="0.5555556">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/decorators/mainDecorator.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/app/ui/controller/DatasetUploadController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="101" selection-start="3240" selection-end="3240" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/SearchItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="601" selection-end="601" vertical-scroll-proportion="0.3320158">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/util/DatasetParserHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.3201581">
+        <state line="24" column="16" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1170,71 +1383,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetSearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/ElasticSearchClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="36" selection-start="1495" selection-end="1495" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetUploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="68" selection-start="2284" selection-end="2284" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/DatasetDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="94" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="83" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/ingheroku-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="85" selection-start="505" selection-end="505" vertical-scroll-proportion="-8.125">
+        <state line="4" column="8" selection-start="40" selection-end="62" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/decorators/mainDecorator.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="7" selection-start="3055" selection-end="3055" vertical-scroll-proportion="-5.7234044">
+        <state line="31" column="0" selection-start="1171" selection-end="1186" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/app/util/TransactionLogErrors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="50" selection-start="550" selection-end="550" vertical-scroll-proportion="0.25925925">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="7" selection-start="2243" selection-end="2243" vertical-scroll-proportion="-17.045454">
+        <state line="80" column="65" selection-start="2748" selection-end="2748" vertical-scroll-proportion="-14.272727">
           <folding />
         </state>
       </provider>
@@ -1248,9 +1420,39 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_search.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/search/model/DatasetDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="30" selection-start="82" selection-end="82" vertical-scroll-proportion="0.06787331">
+        <state line="18" column="13" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/search/component/ElasticSearchClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="36" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/app/ui/controller/DatasetSearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1383" selection-end="1383" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/ingheroku/rest/model/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="15" selection-start="539" selection-end="547" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="0.21604939">
           <folding />
         </state>
       </provider>

@@ -1,4 +1,4 @@
-package com.ingenuity.icg.app.util;
+package com.ingenuity.ingheroku.app.util;
 
 import org.apache.commons.collections.map.LRUMap;
 
