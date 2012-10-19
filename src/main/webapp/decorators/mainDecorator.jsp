@@ -86,16 +86,28 @@
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li id="bootstrap_home"><a href="/home">Home</a></li>
-                        <li class="dropdown" id="bootstrap_dataset_upload">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#bootstrap_dataset_upload">
+                        <li class="dropdown" id="bootstrap_datatset_upload">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#bootstrap_datatset_upload">
                                 Upload
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="/dataset_upload">Upload Dataset</a></li>
+                                <li><a href="/dataset_upload">Upload Experiment Dataset</a></li>
                                 <li><a href="#">Upload IPA cited Publication</a></li>
                             </ul>
                         </li>
+
+                        <li class="dropdown" id="bootstrap_dataset_search">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#bootstrap_dataset_search">
+                                Search
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/dataset_search">Search Experiment Dataset</a></li>
+                                <li><a href="#">Search IPA cited Publication</a></li>
+                            </ul>
+                        </li>
+
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
 
