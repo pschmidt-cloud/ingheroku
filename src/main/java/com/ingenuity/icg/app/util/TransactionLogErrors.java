@@ -17,13 +17,7 @@ package com.ingenuity.icg.app.util;
 public enum TransactionLogErrors {
     COUPON_NO_ERROR("no errors found") ,
     COUPON_NOT_FOUND("Sorry, this code is not valid"),
-    COUPON_NOT_VALID_FOR_SKU("Sorry, this code is not valid for this sku"),
-    COUPON_ALREADY_REDEEMED("Sorry, this code has already been redeemed"),
-    COUPON_HAS_EXPIRED("Sorry, this code has expired"),
-    COUPON_INVALID_ID("Invalid coupon id"),
     COUPON_UNKNOWN_ERROR("Unknown error - possible network or database connection problem"),
-    COUPON_LIMIT_EXCEEDED("Sorry, this code can't be redeemed for more than the remaining value"),
-    COUPON_NOT_VALID_RESTRICTED_USER("Sorry, the user redeeming the coupon is not part of the restricted user list");
 
     private String name;
 
