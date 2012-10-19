@@ -24,12 +24,6 @@
                         if (data.status == "SUCCESS") {
                             $("#searchResults").html("");
                             $("#searchResults").append(data.results);
-
-                            /*
-                             $.each(data.results.coupons, function(key, val) {
-                             $('#couponInvoice').append(val.couponId).append("\n");
-                             });
-                             */
                         } else {
                             errorInfo = "";
                             for (i = 0; i < data.results.length; i++) {

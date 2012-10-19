@@ -15,17 +15,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f85e11ef-5fc5-43a1-9e78-6cf69d6d6c45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ingheroku_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ingheroku_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ingheroku.iml" afterPath="$PROJECT_DIR$/ingheroku.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes.txt" afterPath="$PROJECT_DIR$/notes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/ElasticSearchClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/ElasticSearchClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetSearchController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetSearchController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetUploadController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetUploadController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/database.properties" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_search.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_search.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_upload.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_upload.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/decorators/mainDecorator.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/decorators/mainDecorator.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="ingheroku.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,12 +88,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatasetUploadController.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DatasetUploadController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetUploadController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1488" selection-end="1488" vertical-scroll-proportion="-0.3387424">
+            <state line="61" column="68" selection-start="2284" selection-end="2284" vertical-scroll-proportion="0.0">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="7" selection-start="2243" selection-end="2243" vertical-scroll-proportion="-17.045454">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="7" selection-start="3055" selection-end="3055" vertical-scroll-proportion="-5.7234044">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="85" selection-start="505" selection-end="505" vertical-scroll-proportion="-8.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ingheroku-servlet.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/ingheroku-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
@@ -120,10 +166,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataset_search.jsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="dataset_search.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_search.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="96" selection-start="2347" selection-end="2347" vertical-scroll-proportion="-4.375">
+            <state line="2" column="30" selection-start="82" selection-end="82" vertical-scroll-proportion="0.06787331">
               <folding />
             </state>
           </provider>
@@ -150,7 +196,7 @@
       <file leaf-file-name="database.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="32" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
+            <state line="9" column="83" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -179,9 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/util/DatasetParserHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/SearchItem.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_upload.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/datase_search.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/util/ElasticSearchHelper.java" />
@@ -189,12 +232,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/SearchEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/Dataset.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetSearchController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_search.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/decorators/mainDecorator.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetUploadController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/ElasticSearchClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/DatasetDocument.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_search.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
       </list>
     </option>
   </component>
@@ -912,7 +958,7 @@
       </method>
     </configuration>
     <configuration default="false" name="ingheroku" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 6 - 8080">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/home" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -1003,13 +1049,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26587301" sideWeight="0.993865" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26587301" sideWeight="0.993865" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24834438" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1082,27 +1128,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="47" selection-start="1347" selection-end="2696" vertical-scroll-proportion="0.8496835">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="50" selection-start="8182" selection-end="8182" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/SearchDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="32" selection-start="613" selection-end="613" vertical-scroll-proportion="0.5632411">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/domain/Article.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.51502144">
@@ -1115,37 +1140,6 @@
         <state line="30" column="32" selection-start="845" selection-end="845" vertical-scroll-proportion="0.9259259">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_search.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="96" selection-start="2347" selection-end="2347" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="32" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetSearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="4" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/decorators/mainDecorator.jsp">
@@ -1169,9 +1163,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_upload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="61" selection-start="1600" selection-end="1600" vertical-scroll-proportion="-36.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetSearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/search/ElasticSearchClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="36" selection-start="1495" selection-end="1495" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetUploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="68" selection-start="2284" selection-end="2284" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1183,16 +1198,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_upload.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="61" selection-start="1600" selection-end="1600" vertical-scroll-proportion="-36.25">
+        <state line="9" column="83" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ingenuity/icg/web/DatasetUploadController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/ingheroku-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1488" selection-end="1488" vertical-scroll-proportion="-0.3387424">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="85" selection-start="505" selection-end="505" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="7" selection-start="3055" selection-end="3055" vertical-scroll-proportion="-5.7234044">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="7" selection-start="2243" selection-end="2243" vertical-scroll-proportion="-17.045454">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataset_search.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="30" selection-start="82" selection-end="82" vertical-scroll-proportion="0.06787331">
           <folding />
         </state>
       </provider>

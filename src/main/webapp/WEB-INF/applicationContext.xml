@@ -46,8 +46,18 @@
 
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <!-- Max size in bytes. -->
-        <property name="maxUploadSize" value="100000"/>
+        <property name="maxUploadSize" value="1000000"/>
     </bean>
+
+    <!--
+    <security:http>
+        <security:intercept-url pattern="/*" filters="none" />
+        <security:intercept-url pattern="/images/.*" filters="none"/>
+        <security:intercept-url pattern="/css/.*" filters="none" />
+        <security:intercept-url pattern="/js/.*" filters="none" />
+        <security:intercept-url pattern="/themes/.*" filters="none" />
+    </security:http>
+    -->
 
     <bean id="dbUrl" class="java.net.URI"> <constructor-arg value="${DATABASE_URL}"/> </bean>
     <bean class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" id="dataSource">

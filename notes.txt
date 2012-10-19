@@ -1,10 +1,10 @@
 elasticsearch:
-#curl -XDELETE 'http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/'
-curl -XPUT http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/user/dilbert -d '{ "name" : "Dilbert Brown" }'
-curl  http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/user/_search?q=name:dilbert
-curl  http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/article/_search?q=author:dumas
-curl  http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/dataset/_search?q=keywords:Liver
-curl  http://api.searchbox.io/api-key/1a8c433f2e2f0af26151571ef530284e/index1/meta_data/_search?q=keywords:Liver
+#curl -XDELETE 'http://api.searchbox.io/api-key/6ee91946875c41d59cb221302e6d8bde/emdindex1/'
+curl -XPUT http://api.searchbox.io/api-key/6ee91946875c41d59cb221302e6d8bde/emdindex1/user/dilbert -d '{ "name" : "Dilbert Brown" }'
+curl  http://api.searchbox.io/api-key/6ee91946875c41d59cb221302e6d8bde/emdindex1/user/_search?q=name:dilbert
+curl  http://api.searchbox.io/api-key/6ee91946875c41d59cb221302e6d8bde/emdindex1/article/_search?q=author:dumas
+curl  http://api.searchbox.io/api-key/6ee91946875c41d59cb221302e6d8bde/emdindex1/dataset/_search?q=keywords:Liver
+curl  http://api.searchbox.io/api-key/6ee91946875c41d59cb221302e6d8bde/emdindex1/meta_data/_search?q=tissue_type:Liver
 
 # dataset example
 #curl -XDELETE 'http://localhost:9200/emdindex1/'
