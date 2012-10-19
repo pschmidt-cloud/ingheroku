@@ -1,5 +1,7 @@
 package com.ingenuity.icg.domain;
 
+import com.ingenuity.icg.search.SearchDocument;
+
 import java.util.Map;
 
 /**
@@ -16,7 +18,7 @@ import java.util.Map;
  * accordance with the terms of any agreement or agreements you entered into with
  * Ingenuity Systems.
  */
-public class Dataset {
+public class DatasetDocument extends SearchDocument {
     private String fileName;
     private String description;
     private String folderType = "dataset";
