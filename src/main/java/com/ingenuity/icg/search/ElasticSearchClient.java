@@ -1,6 +1,5 @@
 package com.ingenuity.icg.search;
 
-import com.ingenuity.icg.domain.Dataset;
 import com.ingenuity.icg.domain.SearchItem;
 import com.ingenuity.icg.util.DatasetParserHelper;
 import io.searchbox.client.JestClient;
@@ -17,18 +16,8 @@ import org.elasticsearch.index.query.QueryBuilders;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.ObjectError;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.HashMap;
 import java.util.LinkedHashSet;
-import java.util.Map;
 
 /**
  * Created by IntelliJ IDEA.
@@ -64,7 +53,7 @@ public class ElasticSearchClient {
 
     }
 
-    public JestResult update(SearchEntity entity) {
+    public JestResult update(SearchDocument entity) {
         JestResult jr = null;
 
          try {

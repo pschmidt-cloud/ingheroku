@@ -1,19 +1,13 @@
 package com.ingenuity.icg.web;
 
-import com.ingenuity.icg.domain.Article;
-import com.ingenuity.icg.domain.Dataset;
+import com.ingenuity.icg.domain.DatasetDocument;
 import com.ingenuity.icg.domain.UploadItem;
+import com.ingenuity.icg.search.ElasticSearchClient;
 import com.ingenuity.icg.util.DatasetParserHelper;
-import io.searchbox.client.JestClient;
-import io.searchbox.client.JestClientFactory;
 import io.searchbox.client.JestResult;
-import io.searchbox.client.config.ClientConfig;
-import io.searchbox.client.config.ClientConstants;
-import io.searchbox.core.Index;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -22,10 +16,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.io.FileInputStream;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-import java.util.LinkedHashSet;
 import java.util.Map;
 
 /**
@@ -42,22 +32,16 @@ import java.util.Map;
  * accordance with the terms of any agreement or agreements you entered into with
  * Ingenuity Systems.
  */
-@Controller
+@Controller("datasetUploadController")
 @RequestMapping(value = "/dataset_upload")
 public class DatasetUploadController {
     protected final Log log = LogFactory.getLog(getClass());
 
-    @Value("${elastic_server_url}")
-    private String elasticServerUrl;
-
-    @Value("${elastic_server_index}")
-    private String elasticServerIndex;
-
-    @Value("${elastic_type}")
-    private String elasticType;
-
     @Autowired
     DatasetParserHelper datasetParserHelper;
+
+    @Autowired
+    ElasticSearchClient elasticSearchClient;
 
     @RequestMapping(method = RequestMethod.GET)
     public String getUploadForm(Model model) {
@@ -78,30 +62,17 @@ public class DatasetUploadController {
             String str = new String(uploadItem.getFileData().getBytes());
             Map<String, String> keywordMap = datasetParserHelper.convertStringToMap(str);
 
-            Dataset dataset = new Dataset();
+            DatasetDocument dataset = new DatasetDocument();
             dataset.setFileName(uploadItem.getFileData().getOriginalFilename());
             dataset.setDescription(uploadItem.getDesc());
             dataset.setKeywords(keywordMap);
 
-            // Configuration
-            ClientConfig clientConfig = new ClientConfig();
-            LinkedHashSet<String> servers = new LinkedHashSet<String>();
-            servers.add(elasticServerUrl);
-            clientConfig.getServerProperties().put(ClientConstants.SERVER_LIST, servers);
-
-            // Construct a new Jest client according to configuration via factory
-            JestClientFactory factory = new JestClientFactory();
-            factory.setClientConfig(clientConfig);
-            JestClient client = factory.getObject();
-
-            Index index = new Index.Builder(dataset).index(elasticServerIndex).type(elasticType).build();
-            JestResult jr = client.execute(index);
+            JestResult jr = elasticSearchClient.update(dataset);
             log.info(jr.getJsonString());
         } catch (Exception ex) {
             log.warn(ex);
         }
 
-        //return "redirect:/home";
         return new ModelAndView("dataset_upload", "status", "STATUS: successful upload of " + uploadItem.getFileData().getOriginalFilename());
     }
 }

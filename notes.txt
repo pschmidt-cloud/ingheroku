@@ -15,7 +15,7 @@ curl 'http://localhost:9200/emdindex1/_search?q=tissue_type:Liver&pretty=true'
 curl  http://localhost:9200/emdindex1/meta_data/_search?q=tissue_type:Liver
 
 # facet search on folderType
-curl -X POST "http://localhost:9200/emdindex1/_search?pretty=true" -d '
+curl -X POST "http://uedev29:9200/emdindex1/_search?pretty=true" -d '
   {
     "query" : { "query_string" : {"query" : "*"} },
     "facets" : {

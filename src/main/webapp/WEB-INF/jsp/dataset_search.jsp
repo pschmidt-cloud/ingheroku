@@ -60,7 +60,12 @@
             <h3><a href="#">Instructions</a></h3>
 
             <div>
-                TODO
+                Search on any key/value pair, i.e
+                <ul>
+                    <li>tissue_type:Liver</li>
+                    <li>Liver</li>
+                    <li>folderType:dataset</li>
+                </ul>
             </div>
         </div>
 

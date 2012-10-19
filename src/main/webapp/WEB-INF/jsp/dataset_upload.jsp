@@ -20,7 +20,7 @@
     <br />
     <!-- Main hero unit for a primary marketing message or call to action -->
     <div class="hero-unit">
-        <h3>Please upload a dataset file</h3>
+        <h3>Please upload an experiment dataset file</h3>
 
         <div id="helpAccordian">
 				<h3><a href="#">Instructions</a></h3>

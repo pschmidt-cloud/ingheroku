@@ -1,31 +1,19 @@
 package com.ingenuity.icg.web;
 
-import com.ingenuity.icg.domain.Dataset;
 import com.ingenuity.icg.domain.SearchItem;
-import com.ingenuity.icg.domain.UploadItem;
+import com.ingenuity.icg.search.ElasticSearchClient;
 import com.ingenuity.icg.util.DatasetParserHelper;
-import io.searchbox.client.JestClient;
-import io.searchbox.client.JestClientFactory;
 import io.searchbox.client.JestResult;
-import io.searchbox.client.config.ClientConfig;
-import io.searchbox.client.config.ClientConstants;
-import io.searchbox.core.Index;
-import io.searchbox.core.Search;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.elasticsearch.index.query.QueryBuilder;
-import org.elasticsearch.index.query.QueryBuilders;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.util.HashMap;
-import java.util.LinkedHashSet;
 import java.util.Map;
 
 /**
@@ -47,17 +35,11 @@ import java.util.Map;
 public class DatasetSearchController {
     protected final Log log = LogFactory.getLog(getClass());
 
-    @Value("${elastic_server_url}")
-    private String elasticServerUrl;
-
-    @Value("${elastic_server_index}")
-    private String elasticServerIndex;
-
-    @Value("${elastic_type}")
-    private String elasticType;
-
     @Autowired
     DatasetParserHelper datasetParserHelper;
+
+    @Autowired
+    ElasticSearchClient elasticSearchClient;
 
     @RequestMapping(method = RequestMethod.GET)
     public String getSearchForm(Model model) {
@@ -76,25 +58,7 @@ public class DatasetSearchController {
         }
 
         try {
-            // Configuration
-            ClientConfig clientConfig = new ClientConfig();
-            LinkedHashSet<String> servers = new LinkedHashSet<String>();
-            servers.add(elasticServerUrl);
-            clientConfig.getServerProperties().put(ClientConstants.SERVER_LIST, servers);
-
-            // Construct a new Jest client according to configuration via factory
-            JestClientFactory factory = new JestClientFactory();
-            factory.setClientConfig(clientConfig);
-            JestClient client = factory.getObject();
-
-            QueryBuilder queryBuilder = QueryBuilders.queryString(searchItem.getSearchTerm());
-
-            //Search search = new Search(searchItem.getSearchTerm());
-            Search search = new Search(queryBuilder);
-            search.addIndex(elasticServerIndex);
-            search.addType(elasticType);
-
-            JestResult jr = client.execute(search);
+            JestResult jr = elasticSearchClient.search(searchItem) ;
             log.info(jr.getJsonString());
 
             dataMap.put("results", jr.getJsonString());
