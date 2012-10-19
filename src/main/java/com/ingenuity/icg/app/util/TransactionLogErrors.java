@@ -17,7 +17,7 @@ package com.ingenuity.icg.app.util;
 public enum TransactionLogErrors {
     COUPON_NO_ERROR("no errors found") ,
     COUPON_NOT_FOUND("Sorry, this code is not valid"),
-    COUPON_UNKNOWN_ERROR("Unknown error - possible network or database connection problem"),
+    COUPON_UNKNOWN_ERROR("Unknown error - possible network or database connection problem");
 
     private String name;
 
