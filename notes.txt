@@ -3,16 +3,28 @@ elasticsearch:
 curl -XPUT http://api.searchbox.io/api-key/6ee91946875c41d59cb221302e6d8bde/emdindex1/user/dilbert -d '{ "name" : "Dilbert Brown" }'
 curl  http://api.searchbox.io/api-key/6ee91946875c41d59cb221302e6d8bde/emdindex1/user/_search?q=name:dilbert
 curl  http://api.searchbox.io/api-key/6ee91946875c41d59cb221302e6d8bde/emdindex1/article/_search?q=author:dumas
-curl  http://api.searchbox.io/api-key/6ee91946875c41d59cb221302e6d8bde/emdindex1/dataset/_search?q=keywords:Liver
+curl  http://api.searchbox.io/api-key/6ee91946875c41d59cb221302e6d8bde/emdindex1/meta_data/_search?q=keywords.tissue_type:Liver
 curl  http://api.searchbox.io/api-key/6ee91946875c41d59cb221302e6d8bde/emdindex1/meta_data/_search?q=tissue_type:Liver
 
 # dataset example
 #curl -XDELETE 'http://localhost:9200/emdindex1/'
-curl -XPUT 'http://localhost:9200/emdindex1/meta_data/1' -d '{"userObjectId":444, "folderType":"dataset", "keywords":{"tissue_type":"Liver","external_experiment_id":"7330943"}}'
-curl -XPUT 'http://localhost:9200/emdindex1/meta_data/2' -d '{"userObjectId":666, "folderType":"dataset", "keywords":{"tissue_type":"Liver","external_experiment_id":"7330943"}}'
-curl -XPUT 'http://localhost:9200/emdindex1/meta_data/3' -d '{"userObjectId":5055, "folderType":"analysis", "keywords":{"tissue_type":"Liver","external_experiment_id":"7330943"}}'
+curl -XPUT 'http://localhost:9200/emdindex1/meta_data/1' -d '{"folderId":450791, "publish_date":"2011/05/07 10:00:05" , "folderType":"dataset", "keywords":{"tissue_type":"Liver","external_experiment_id":"7330943", "Fold Change_cutoff_2":"2"}}'
+curl -XPUT 'http://localhost:9200/emdindex1/meta_data/2' -d '{"folderId":666, "folderType":"dataset", "publish_date":"2011/06/07 10:00:05", "keywords":{"tissue_type":"Liver","external_experiment_id":"7330943"}}'
+curl -XPUT 'http://localhost:9200/emdindex1/meta_data/3' -d '{"folderId":5055, "folderType":"analysis", "publish_date":"2011/07/07 10:00:05", "keywords":{"tissue_type":"Liver","external_experiment_id":"7330943", "<rank type>_cutoff_3>":""}}'
+
 curl 'http://localhost:9200/emdindex1/_search?q=tissue_type:Liver&pretty=true'
-curl  http://localhost:9200/emdindex1/meta_data/_search?q=tissue_type:Liver
+curl 'http://localhost:9200/emdindex1/meta_data/_search?q=tissue_type:Liver'
+curl 'http://localhost:9200/emdindex1/meta_data/_search?q=keywords.tissue_type:Liver'
+
+# facet + histogram search
+curl -X POST "http://localhost:9200/emdindex1/_search?pretty=true" -d '
+  {
+    "query" : { "query_string" : {"query" : "*"} },
+    "facets" : {
+      "publish_date" : { "date_histogram" : {"field" : "publish_date", "interval" : "month"} }
+    }
+  }
+'
 
 # facet search on folderType
 curl -X POST "http://uedev29:9200/emdindex1/_search?pretty=true" -d '
@@ -22,7 +34,6 @@ curl -X POST "http://uedev29:9200/emdindex1/_search?pretty=true" -d '
       "tags" : { "terms" : {"field" : "folderType"} }
     }
   }
-'
 
 curl -XPUT 'http://uedev29:9200/emdindex1/meta_data/1' -d '{"userObjectId":444, "folderType":"dataset", "keywords":{"tissue_type":"Liver","external_experiment_id":"7330943"}}'
 curl -XPUT 'http://uedev29:9200/emdindex1/meta_data/2' -d '{"userObjectId":666, "folderType":"dataset", "keywords":{"tissue_type":"Liver","external_experiment_id":"7330943"}}'
