@@ -1,0 +1,115 @@
+# dataset example
+#curl -XDELETE 'http://localhost:9200/emdindex1/'
+
+curl -X POST 'http://localhost:9200/emdindex1/folder/450791' -d '
+{
+	"id": 450791,
+	"folder_type":"dataset", 
+	"file_name" : "affy_2obs.txt",
+	"user_id":620,
+	"creation_date":"2012/10/22 10:00:05" , 
+
+	"file_meta_data":{
+		"TotalRankTypes" : "1",
+		"IsCompleteDataset" : "T",
+		"TotalObservations" : "2"
+	},
+
+	"exp_meta_data": [
+		{
+			"folder" : 450791,
+			"observation_index" : 0,
+			"tissue_type":"Liver",
+			"observation_name" : "Low Dose 6 hr",
+			"external_experiment_id":"7330943", 
+			"Fold Change_cutoff_2":"2"
+		},
+		{
+			"folder" : 450791,
+			"observation_index" : 1,
+			"observation_name" : "High Dose 6 hr",
+			"tissue_type":"Heart",
+			"external_experiment_id":"7330944", 
+			"Fold Change_cutoff_2":"2"
+		}
+	]
+}'
+
+curl -X POST "http://localhost:9200/emdindex1/_search?pretty=true" -d '
+  {
+    "query" : { "query_string" : {"query" : "exp_meta_data.tissue_type:Liver"} },
+    "fields" : ["folder", "folder_type", "exp_meta_data.observation_index", "exp_meta_data.observation_name"]
+  }
+'
+
+
+curl -X POST 'http://localhost:9200/emdindex1/folder/450791' -d '
+{
+	"id": 450791,
+	"folder_type":"dataset", 
+	"file_name" : "affy_2obs.txt",
+	"user_id":620,
+	"creation_date":"2012/10/22 10:00:05" , 
+
+	"file_meta_data":{
+		"TotalRankTypes" : "1",
+		"IsCompleteDataset" : "T",
+		"TotalObservations" : "2"
+	}
+}'
+
+curl -X POST 'http://localhost:9200/emdindex1/observation/1077791' -d '
+{
+	"id" : 1077791,
+	"folder":450791, 
+	"observation_index" : 0,
+	"observation_name" : "Low Dose 6 hr",
+	"user_id":620,
+	"folder_type":"dataset", 
+	"creation_date":"2012/10/22 10:00:05" , 
+
+	"exp_meta_data":{
+		"tissue_type":"Liver",
+		"external_experiment_id":"7330943", 
+		"Fold Change_cutoff_2":"2"
+	}
+}'
+
+curl -X POST 'http://localhost:9200/emdindex1/observation/1144412' -d '
+{
+	"id" : 1144412,
+	"folder":450791, 
+	"observation_index" : 1,
+	"observation_name" : "High Dose 6 hr",
+	"user_id":620,
+	"folder_type":"dataset", 
+	"creation_date":"2012/10/22 10:00:05" , 
+
+	"exp_meta_data":{
+		"tissue_type":"Liver",
+		"external_experiment_id":"7330944", 
+		"Fold Change_cutoff_2":"3"
+	}
+}'
+
+curl 'http://localhost:9200/emdindex1/observation/_search?q=exp_meta_data.tissue_type:Liver'
+curl 'http://localhost:9200/emdindex1/observation/_search?q=*'
+
+curl 'http://localhost:9200/emdindex1/folder/_search?q=file_meta_data.TotalObservations:2'
+
+curl -X POST "http://localhost:9200/emdindex1/_search?pretty=true" -d '
+  {
+    "query" : { "query_string" : {"query" : "Liver"} },
+	"fields" : ["folder", "folder_type", "observation_index"],
+    "facets" : {
+      "tags" : { "terms" : {"field" : "folder_type"} }
+    }
+  }
+'
+
+curl -X POST "http://localhost:9200/emdindex1/_search?pretty=true" -d '
+  {
+    "query" : { "query_string" : {"query" : "Liver"} },
+	"fields" : ["folder", "folder_type", "observation_index"]
+  }
+'
